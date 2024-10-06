@@ -1,0 +1,17 @@
+baseurl = "/"
+title = "Will Bishop"
+theme = "PaperMod"
+
+[Params]
+    mainSections = ["post"]
+    intro = true
+    headline = "Will Bishop"
+    description = "A place for me to share my thoughts – probably about Swift."
+    github = "https://github.com/WillRBishop"
+    twitter = "https://x.com/WillRBishop"
+    opengraph = true
+    shareTwitter = true
+    dateFormat = "Mon, Jan 2, 2006"
+
+[Permalinks]
+    post = "/:filename/"

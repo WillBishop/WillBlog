@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Will Bishop</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Will Bishop</description>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Apr 2015 02:13:50 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/page/about/</link>
+      <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
+      <guid>//localhost:1313/page/about/</guid>
+      <description>Things about me.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>//localhost:1313/page/contact/</link>
+      <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
+      <guid>//localhost:1313/page/contact/</guid>
+      <description>How to contact me.</description>
+    </item>
+    <item>
+      <title>Incrementally adopting strict concurrency in a preexisting project</title>
+      <link>//localhost:1313/incrementally-adopting-swift-concurrency/</link>
+      <pubDate>Sun, 28 Sep 2014 02:13:50 +0000</pubDate>
+      <guid>//localhost:1313/incrementally-adopting-swift-concurrency/</guid>
+      <description>How I&amp;#39;m adopting strict concurrency in Pestle, as UIKit codebase that is multiple years old.</description>
+    </item>
+  </channel>
+</rss>
