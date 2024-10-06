@@ -1,6 +1,6 @@
 baseurl = "/"
 title = "Will Bishop"
-theme = "PaperMod"
+theme = "papermod"
 
 [Params]
     mainSections = ["post"]
