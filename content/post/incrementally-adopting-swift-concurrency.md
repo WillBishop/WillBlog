@@ -1,7 +1,7 @@
 +++
 title = "Incrementally adopting strict concurrency in a preexisting project"
 description = "How I'm adopting strict concurrency in Pestle, as a UIKit codebase that is multiple years old."
-date = 2014-09-28T02:13:50Z
+date = 2024-10-06T02:13:50Z
 author = "Will Bishop"
 +++
 
