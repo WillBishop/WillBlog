@@ -12,6 +12,6 @@ theme = "papermod"
     opengraph = true
     shareTwitter = true
     dateFormat = "Mon, Jan 2, 2006"
-
+    baseURL = 'https://willbish.com'
 [Permalinks]
     post = "/:filename/"

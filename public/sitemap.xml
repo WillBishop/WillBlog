@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/incrementally-adopting-swift-concurrency/</loc>
+    <lastmod>2024-10-06T02:13:50+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2024-10-06T02:13:50+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2024-10-06T02:13:50+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/page/about/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url><url>
@@ -10,15 +19,6 @@
   </url><url>
     <loc>//localhost:1313/page/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/incrementally-adopting-swift-concurrency/</loc>
-    <lastmod>2014-09-28T02:13:50+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/</loc>
-    <lastmod>2014-09-28T02:13:50+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>

@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Will Bishop</description>
     <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Sep 2014 02:13:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2024 02:13:50 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Incrementally adopting strict concurrency in a preexisting project</title>
       <link>//localhost:1313/incrementally-adopting-swift-concurrency/</link>
-      <pubDate>Sun, 28 Sep 2014 02:13:50 +0000</pubDate>
+      <pubDate>Sun, 06 Oct 2024 02:13:50 +0000</pubDate>
       <guid>//localhost:1313/incrementally-adopting-swift-concurrency/</guid>
-      <description>How I&amp;#39;m adopting strict concurrency in Pestle, as UIKit codebase that is multiple years old.</description>
+      <description>How I&amp;#39;m adopting strict concurrency in Pestle, as a UIKit codebase that is multiple years old.</description>
     </item>
   </channel>
 </rss>
