@@ -57,6 +57,7 @@ jobs:
           TZ: America/Los_Angeles
         run: |
           hugo \
+            --buildDrafts \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
