@@ -4,10 +4,21 @@
     <title>Posts on Will Bishop</title>
     <link>//localhost:1313/post/</link>
     <description>Recent content in Posts on Will Bishop</description>
-    <generator>Hugo -- 0.126.1</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Oct 2024 02:13:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jun 2025 13:02:00 +0930</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making My Gate Smart for Under 10 Dollars</title>
+      <link>//localhost:1313/making-my-gate-smart-for-under-10-dollars/</link>
+      <pubDate>Sun, 08 Jun 2025 13:02:00 +0930</pubDate>
+      <guid>//localhost:1313/making-my-gate-smart-for-under-10-dollars/</guid>
+      <description>&lt;p&gt;I recently moved into a new (to me) house with an electric gate, the kind you operate with a remote like this&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://res.craft.do/user/full/76a116bb-43be-1833-9fc0-33e34d1a381e/doc/8FC10ED4-9A21-4A67-9BD9-B533CBF02468/E75B97F3-C417-48CD-8651-6D9C23463C7A_2/XV85YLhc3DUfBH7QbxyujrJyMIrbGK3eyPA7V7Lr30Ez/Image.png&#34; alt=&#34;Image.png&#34;  /&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;why&#34;&gt;Why&lt;/h1&gt;
+&lt;p&gt;Now I&amp;rsquo;m about as forgetful as they come, so the prospect of leaving this key at home, or worse, losing it completely, terrified me. I could, with the best of intentions, commit to leaving it in a single place or velcro sticking it to my car, but I know myself too well, so I know it would only be a matter of time until I had an &lt;em&gt;oh crap&lt;/em&gt; moment and had to call my partner for help.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Incrementally adopting strict concurrency in a preexisting project</title>
       <link>//localhost:1313/incrementally-adopting-swift-concurrency/</link>
