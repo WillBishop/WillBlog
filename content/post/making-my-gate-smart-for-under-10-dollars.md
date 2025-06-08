@@ -14,16 +14,16 @@ Now I'm about as forgetful as they come, so the prospect of leaving this key at 
 
 This gave me an idea, what if I could somehow control it from my phone using either an app or Siri? 
 
-I found various existing options for this online, all ranging from **$100-$200**, this was simply too expensive for me to justify, so I kept looking for different solutions. 
+I found various existing options for this online, all ranging from **$100-$200**, this was simply too expensive for me to justify, so I decided I would just make one myself... how hard could it be!?
 
 # How
 
-The first thing I did was remove the cover from the gate control board to look at what inputs and outputs were available to me, and it looked like like:
+The first thing I did was remove the cover from the gate control board to look at what inputs and outputs were available to me, and it looked like this:
 
 
 ![Image.png](https://res.craft.do/user/full/76a116bb-43be-1833-9fc0-33e34d1a381e/doc/8FC10ED4-9A21-4A67-9BD9-B533CBF02468/61644349-28AD-4E1B-89CD-3907E847FDE2_2/myvxBV0K6KuacYri23H1qkzcFxJdoUjBrx2TKsi7IK8z/Image.png)
 
-I was particularly interested in that **TRG** pin. So I took a small piece of wire and shorted the TRG and COM pins, and the gate began to swing open! Then, one the gate was closed, I shorted the pins once more and the gate began to swing shut.
+I was particularly interested in that **TRG** pin. So I took a small piece of wire and shorted the TRG and COM pins, and the gate began to swing open! Then, once the gate was closed, I shorted the pins once more and the gate began to swing shut.
 
 Perfect! So if I could somehow remotely trigger the **TRG** (trigger) pin, I could control this gate. The other pin I was interested in was the **LED** pin, this would let me read the current state of the gate. This would be particularly useful for the times when I did still use the remote, as the phyiscal and digital state of the gate would never be out of sync. 
 
@@ -35,7 +35,7 @@ So I bought an ESP32 development board from Aliexpress for ~$2, a couple GPIO ca
 
 Then I wired it up like this:
 
-![Frame.png](https://res.craft.do/user/full/76a116bb-43be-1833-9fc0-33e34d1a381e/doc/8FC10ED4-9A21-4A67-9BD9-B533CBF02468/3CDF3EB2-F6D8-4C41-98B5-FF4D81463B8B_2/uwGX0Sy0ymr1aUa45DnBQj0XjWsS2jDXJxV5o4vGtZgz/Frame.png)
+![Frame.png](https://res.craft.do/user/full/76a116bb-43be-1833-9fc0-33e34d1a381e/doc/8FC10ED4-9A21-4A67-9BD9-B533CBF02468/27C48215-C65C-414D-94CF-F2E32603D76F_2/yoWXd2kgrqEXmAVfmgYnNkZIZkXcHxlxbEY5U0h2cRsz/Frame.png)
 
 The ESP32 receives power from the auxillary power provided by the gate, but not before being stepped down from 12v to 5v.
 
@@ -46,8 +46,6 @@ Then the trigger pin is wired to GPIO16 and the LED to GPIO4.
 So now we have a small Wi-Fi enabled board connected to the trigger and LED pins. 
 
 I wanted the eventual control interface for this to be through Apple HomeKit, so I could control it with my voice but also with automations
-
-![Image.png](https://res.craft.do/user/full/76a116bb-43be-1833-9fc0-33e34d1a381e/doc/8FC10ED4-9A21-4A67-9BD9-B533CBF02468/38A74CD1-6FE8-4428-92D3-8F61D6403ECA_2/228ZDWC6AaflhBWrZQfyT8bVWHFr1sNZvaiS0VV36Hwz/Image.png)
 
 So to get there, I used a platform called [ESPHome](https://esphome.io), an add-on for [Home Assistant](https://www.home-assistant.io) built to make connecting an ESP32 to the rest of your smart home relatively painless.
 
@@ -170,6 +168,9 @@ return stable_state ? COVER_OPEN : COVER_CLOSED;
 
 It checks the state of the LED as well as when it last changed. Once it has been stable for 2s we publish either COVER_OPEN or COVER_CLOSED. This way if my partner uses the clicker to open the gate, the Home app on my iPhone will also show the gate as either open or closed.
 
+And just like that, with a little extra tinkering in the Home Assistant side, I could control the gate from my iPhone
+
+![Image.png](https://res.craft.do/user/full/76a116bb-43be-1833-9fc0-33e34d1a381e/doc/8FC10ED4-9A21-4A67-9BD9-B533CBF02468/38A74CD1-6FE8-4428-92D3-8F61D6403ECA_2/228ZDWC6AaflhBWrZQfyT8bVWHFr1sNZvaiS0VV36Hwz/Image.png)
 
 
 This was my first ESP32 project, and I'm so thrilled with how it turned out. When I arrive home, my gate automatically opens, and when I get in my car at home it automatically opens too.
